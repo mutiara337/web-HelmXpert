@@ -68,9 +68,6 @@ body {
     background: #ffaa33;
     text-decoration: none;
     }
-    
-
-
 
 
 nav {
@@ -225,67 +222,6 @@ h3 {
     background: #ffffff;
 }
 
-/* Gaya default untuk perangkat desktop */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-/* Gaya untuk tablet */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .menu {
-        font-size: 20px;
-    }
-    .kolom {
-        margin-top: 30px;
-    }
-}
-
-/* Gaya untuk ponsel */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-    .logo img {
-        width: 50px;
-    }
-    .menu {
-        font-size: 18px;
-    }
-    .kolom {
-        margin-top: 20px;
-    }
-}
-
-nav .menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.menu-toggle {
-    display: none;
-}
 
 @media (max-width: 768px) {
     .menu {
