@@ -1,3 +1,4 @@
+
 * {
     text-decoration: none;
     margin: 0px;
@@ -246,5 +247,123 @@ h3 {
         padding: 10px 20px;
         font-size: 14px;
     }
+}
+#product img {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+#product {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.product-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.product-item img {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+.product-item p {
+    flex: 1;
+}
+
+/* Default (untuk perangkat desktop) */
+body {
+    font-size: 16px;
+}
+
+/* Untuk tablet */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    /* Mengubah tampilan menu menjadi vertikal pada tablet */
+    .menu {
+        display: block;
+    }
+}
+
+/* Untuk perangkat ponsel */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Menyembunyikan elemen tertentu di ponsel */
+    .desktop-only {
+        display: none;
+    }
+
+    /* Menyesuaikan layout atau gambar */
+    .product-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Flex container untuk menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+    .menu ul {
+        flex-direction: column;
+    }
+}
+
+/* Grid layout untuk produk */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+.container {
+    width: 90%;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
